@@ -19,6 +19,9 @@ dependencies {
 
     annotationProcessor('org.projectlombok:lombok:1.18.20') //lombok의 경우 바로 사용할 수 있는 것이 아님.
     compileOnly("org.projectlombok:lombok") // Intellij에서 몇가지 설정을 더 해주어야 합니다.
+
+    //테스트에 필요한 라이브러리
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
 
 test {
